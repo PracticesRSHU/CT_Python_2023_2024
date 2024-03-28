@@ -43,6 +43,9 @@ class Human:
         self.job=job
         self.home=home
         self.car=car
+
+    def __str__(self) -> str:
+        return f"Human: {self.name} has a car {self.car} "
     # встановлення значень властивостей обєкта
     def set_job(self):
         self.job=Job(job_list)
@@ -113,7 +116,8 @@ class Auto:
         else:
             print(f"The car cannot move to {path}")
             return False 
-
+    def __str__(self) -> str:
+        return self.brand
 
 
 car=Auto(brands_of_car)
@@ -145,3 +149,4 @@ print(oleg.car.fuel)
 # print(oleg.job)
 print(oleg.money)
 print(oleg.satiety)
+print(oleg)
