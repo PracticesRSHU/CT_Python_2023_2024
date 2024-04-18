@@ -107,6 +107,7 @@ manager2.info()
 user_anonym=str(chornozhukov) #using repr
 print("Using repr for init object user_amomym: ",user_anonym)
 manager1.info()
+# manager1._Manager__info()
 print("List base class: ",Manager.__base__)
 print("List multiply nasliduvannya: ",Manager.__mro__)
 print("Name clas: ",Manager.__name__)
