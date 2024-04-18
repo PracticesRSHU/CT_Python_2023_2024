@@ -12,6 +12,7 @@ class Figure:
         self._visible = False # _visible - чи є фігура
         # видимою на екрані
         self._color = color # _color - колір фігури
+
     def _draw(self, color):
         """ Допоміжний метод, що зображує фігуру
         Тут здійснюється лише декларація методу, а конкретна
@@ -19,6 +20,7 @@ class Figure:
         :param color: колір
         """
         pass
+
     def show(self):
         """ Зображує фігуру на екрані """
         if not self._visible:
@@ -59,6 +61,7 @@ class Circle (Figure):
         # Обов’язковий виклик конструктора базового класу
         super().__init__(x, y, color)
         self._r = r # _r - радіус кола
+        
     def _draw(self, color):
         """ Допоміжний метод, що зображує коло заданим кольором
         :param color: колір
@@ -86,6 +89,7 @@ class Quadrate(Figure):
         # Обов’язковий виклик конструктора базового класу
         super().__init__(x, y, color)
         self._a = a # _a - довжина сторони квадрата
+
     def _draw(self, color):
         """ Допоміжний метод, що зображує квадрат
         :param color: колір
