@@ -43,7 +43,6 @@ class DiagnosableCar(Car, Diagnosable):
 
 
 class DiagnosableHuman(Human, Diagnosable):
-
     def diagnose(self):
         if self._health <= 0:
            return "A junk food has killed you!"
@@ -58,6 +57,6 @@ h = DiagnosableHuman()
 for i in range(5):
     c.driving()
     h.eat("junk food")
-    
+
 print(c.diagnose())
 print(h.diagnose())
