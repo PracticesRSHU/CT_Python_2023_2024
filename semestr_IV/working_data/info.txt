@@ -37,7 +37,7 @@ S	Символи	Count
 
 
 
-Working byte
+#Working byte
 import struct 
 valid_png_header = b'\x89PNG\r\n\x1a\n' 
 f = open('nasa_logo.png', 'rb') 
@@ -61,7 +61,10 @@ f.close()
 \S	символи, крім символів пропусків
 \b	межа слова
 \B	не межа слова
-
+\+   + 
+\(  (
+\)   )    
+ 
 
 Таблиця "Специфікатори шаблонів"
 Шаблон	Співпадіння
